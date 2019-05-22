@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+         input[type="date"]::before { 
+	    content: attr(data-placeholder);
+	    width: 100%;
+}
+
+
+input[type="date"]:valid::before {
+
+         display: block; }
+         input[type="date"]::-webkit-calendar-picker-indicator {
+        color: transparent;
+        background: none;
+        z-index: 1;
+}
+
+
+#calender{
+    position: absolute;
+    margin-top:5px;
+    left:232px;
+}
+
+        </style>
+    </head>
+    <body>
+            <input type="date" name="dob" width="400px" required>
+            <i  id="calender" class="fa fa-calendar"></i>
+    </body>
+</html>
+
+       

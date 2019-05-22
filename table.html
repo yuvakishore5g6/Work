@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+ table  {
+            border-collapse: collapse;
+            width: 85%;
+        }
+    boby{
+            font-family: 'Lato', sans-serif;
+
+        }
+td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+#input{
+             margin-left: 10px;
+        }
+#select1{
+            width: 400px;
+            height: 35px;
+            padding-left: 5px;
+            border-color: #058cd8;
+        }
+#select2{
+             width: 250px;
+             height: 30px;
+             border-color: #058cd8;
+
+        }
+#textarea{
+            padding: 10px;
+            resize: none;
+            border-color: #058cd8;
+        }
+#loc{
+    margin-top:20px;
+    height:30px;
+    width:395px;
+    padding-left: 5px;
+    border: 1px solid #058cd8;
+
+}
+#vac{
+    margin-top:20px;
+    height:30px;
+    width:245px;
+    padding-left: 5px;
+    border: 1px solid #058cd8;
+}
+#date{
+    height:30px;
+    width:390px;
+    border: 1px solid #058cd8;
+}
+#calender{
+    position:absolute;
+    left:390px;
+    size:30px;
+    color:red;
+    margin-top: 8px;
+    
+    
+}
+#calender2{
+    position:absolute;
+    left:820px;
+    size:30px;
+    color:red;
+    margin-top: 8px;
+}
+.button1{
+    height: 25px;
+    background-color:#009688;
+    border:1px solid:#009688;
+    color:white;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border-color: #058cd8;
+
+}
+#but{
+    height:20px;
+}
+.but-save{
+    height:30px;
+    width:95px;
+    color:white;
+    background-color:#058cd8;
+    border-radius:4px;
+}
+.but-reset{
+    height:30px;
+    width:95px;
+   background-color:#ed5d67;
+    border-radius:4px;
+    color:white;
+}
+#save{
+    position:absolute;
+    margin-top:6px;
+    color:white;
+    left:127px;
+
+}
+#reset{
+    position:absolute;
+    margin-top:6px;
+    color:white;
+    left:27px;
+}
+#ex{
+    color:red;
+}
+#ex1{
+    position:absolute;
+    margin-top:8px;
+    margin-left:5px;
+     color:red;
+}
+#ex2{
+    position: absolute;
+    margin-top:8px;
+    margin-left:18px; 
+    color:red;
+}
+</style>
+
+
+</head>
+<body>
+
+<h2>HTML Table</h2>
+<form action="">
+<table>
+ 
+  
+   <TR>
+       <td> 
+           <label><i>Bussiness type</i></label><br>
+           <select id="select1" name="country">
+                <option value=""></option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <i class="fa fa-exclamation" id="ex"></i>
+        </td>
+        <td> 
+                <label><i>Sub bussiness type</i></label><br>
+                <select id="select1" name="country">
+                     <option value=""></option>
+                     <option value="australia">Australia</option>
+                     <option value="canada">Canada</option>
+                     <option value="usa">USA</option>
+                   </select>
+                   <i class="fa fa-exclamation" id="ex"></i>
+        </td>
+        <td> 
+                    <label><i>Bussiness type</i></label><br>
+                    <select id="select2" name="country">
+                         <option value="Select from list"></option>
+                         <option value="australia">Australia</option>
+                         <option value="canada">Canada</option>
+                         <option value="usa">USA</option>
+                       </select>
+                       <i class="fa fa-exclamation" id="ex"></i>
+        </td>
+    </TR>
+    <tr>
+       <td colspan="3" id="but">
+           <button class="button1">+ Job role</button>
+       </td>
+
+    </tr>
+    <tr>
+        <td> <label><i>Job type</i></label><br>
+            <select id="select1" name="country">
+                 <option value="Select from list">Select from list</option>
+                 <option value="australia">Australia</option>
+                 <option value="canada">Canada</option>
+                 <option value="usa">USA</option>
+               </select>
+               <i class="fa fa-exclamation" id="ex"></i>
+        </td>
+        <td colspan="2">
+ 
+            <textarea name="text" placeholder="Job Profile"  id="textarea" rows="4" cols="90"></textarea>
+            <i class="fa fa-exclamation" id="ex1"></i>
+        </td>
+    </tr>
+    <tr>
+       <td> <input type="text"  id="loc" placeholder="Location"> <i class="fa fa-exclamation" id="ex"></i></td>
+
+       <td> 
+          <label><i>Shift</i></label> <br>
+            <select id="select1" name="country">
+             <option value="Select from list"></option>
+             <option value="australia">Australia</option>
+             <option value="canada">Canada</option>
+             <option value="usa">USA</option>
+           </select>
+           <i class="fa fa-exclamation" id="ex"></i>
+       </td>
+       <td> 
+            <input type="text"  id="vac" placeholder="Vacancies Available"> <i class="fa fa-exclamation" id="ex"></i>
+       </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="date" placeholder=" Expected Joining Date" name="date">
+            <i  id="calender" class="fa fa-calendar"></i>
+            <i class="fa fa-exclamation" id="ex2"></i>
+        </td>
+        <td>
+                <input type="text" id="date" placeholder=" Last date for applying" name="date">
+                <i  id="calender2" class="fa fa-calendar"></i>
+                <i class="fa fa-exclamation" id="ex2"></i>
+            </td>
+            <td>
+
+            </td>
+
+    </tr>
+    <tr>
+            <td colspan="3">
+                    <button class="but-reset"> Reset</button>
+                    <i class="fa fa-trash" id="reset"></i>
+                     <button class="but-save"> Save</button>
+                     <i class="fa fa-floppy-o" id="save" ></i>
+                </td>
+    </tr>
+
+  
+</table>
+</form>
+</body>
+</html>
